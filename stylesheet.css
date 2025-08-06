@@ -23,8 +23,9 @@ header img {
 nav a {
     text-decoration: none;
     margin: 0 10px;
-    color: #333;
+    color: green;
     font-weight: bold;
+
 }
 
 .btn {
@@ -37,11 +38,12 @@ nav a {
     margin-top: 10px;
 }
 
+/* Hero section */
 .hero {
-    background: #f5f5f5;
+
     padding: 50px 40px;
     display: flex;
-    
+
     align-items: center;
     justify-content: space-between;
     text-align: center;
@@ -55,16 +57,54 @@ nav a {
     width: 250px;
 }
 
-.section {
-    padding: 40px;
+
+/* Why Choose Us section */
+.about-box {
+    display: flex;
+    justify-content: center;
+    
+    background: white;
+    padding: 30px;
+    margin: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    flex-wrap: wrap; 
+    max-width: 800px;
+}
+
+.about-text {
+    flex: 1;
+    min-width: 250px;
+}
+
+.about-text h2 {
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.about-text ul {
+    list-style: disc;
+    padding-left: 20px;
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+.about-text li {
+    margin-bottom: 8px;
+}
+
+.about-image {
+    flex: 1;
     text-align: center;
+    min-width: 200px;
 }
 
-.why-list {
-    list-style: none;
-    padding: 0;
+.about-image img {
+    max-width: 200px;
+    height: auto;
 }
 
+/* Services section */
 .services {
     display: flex;
     justify-content: center;
@@ -124,6 +164,7 @@ nav a {
     border-radius: 5px;
 }
 
+/* Footer */
 footer {
     background: #003300;
     color: white;
