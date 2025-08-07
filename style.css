@@ -1,5 +1,5 @@
 /*home page styles*/
---------------------------------------------------------------------------------------------------------
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -26,13 +26,13 @@ header img {
 nav a {
     text-decoration: none;
     margin: 0 10px;
-    color: green;
+    color: #00804D;
     font-weight: bold;
 
 }
 
 .btn {
-    background: green;
+    background: #00804D;
     color: white;
     padding: 10px 20px;
     text-decoration: none;
@@ -52,11 +52,14 @@ nav a {
 }
 
 .hero h2{
-    color: green; 
+    color: #00804D; 
 }
 
 .hero img {
-    width: 250px;
+    max-width: 350px;
+    flex: 1;
+    margin-right: 20px;
+    padding-right: 20px;
 }
 
 
@@ -100,7 +103,7 @@ nav a {
 }
 
 .about-image img {
-    max-width: 200px;
+    max-width: 500px;
     height: auto;
 }
 
@@ -119,7 +122,7 @@ nav a {
 }
 
 .services-section h2 {
-    color: green;
+    color: #00804D;
     font-weight: bold;
     margin-bottom: 30px;
 }
@@ -157,7 +160,7 @@ nav a {
 }
 
 .service-btn {
-    background: #2e7d32;
+    background: #00804D;
     color: white;
     padding: 8px 20px;
     border-radius: 4px;
@@ -166,7 +169,7 @@ nav a {
 }
 
 .service-btn.learn-more {
-    background: #4caf50;
+    background: #00804D;
 }
 
 
@@ -178,7 +181,7 @@ nav a {
 
 .clients h2 {
     text-align: center;
-    color: green;
+    color: #00804D;
     margin-bottom: 20px;
 }
 
@@ -194,7 +197,7 @@ nav a {
 }
 
 .marquee-content img {
-    height: 50px;
+    height: 250px;
     margin: 0 40px;
 }
 
@@ -214,7 +217,7 @@ nav a {
     font-weight: bold;
     size: 50px;
     margin-bottom: 20px;
-    color: green;
+    color: 00804D;
 }
 
 .projects-grid {
@@ -223,14 +226,14 @@ nav a {
     gap: 20px;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 250px) {
     .projects-grid {
         grid-template-columns: 1fr; /* 1 column for mobile */
     }
 }
 
 .project-card img {
-    height: 100px; /* Reduced height */
+    height: 50px; /* Reduced height */
     object-fit: cover; /* Keeps aspect ratio and crops overflow */
     display: block;
 }
@@ -245,7 +248,7 @@ nav a {
 
 .project-card img {
     width: 100%;
-    height: auto;
+    height: 300px;
     display: block;
 }
 
@@ -264,11 +267,12 @@ nav a {
 }
 
 .view-btn {
-    background: #2e7d32;
+    background: #00804D;
     color: white;
     padding: 5px 12px;
     border-radius: 4px;
-    font-size: 12px;
+    font-size: 20px;
+    width: 55px;
     text-decoration: none;
 }
 
@@ -278,17 +282,196 @@ nav a {
     font-size: 16px;
     padding: 12px 30px;
 }
-
-
-/* Footer */
-footer {
-    background: #003300;
-    color: white;
-    padding: 20px;
-    text-align: center;
+/* contact us */
+.contact-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  font-family: Arial, sans-serif;
 }
 
-footer a {
+.contact-container {
+  background: white;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  padding: 30px;
+  max-width: 900px;
+  height: 300px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+}
+
+.contact-text h2 {
+  margin: 0 0 15px;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.contact-text p {
+  margin: 0 0 20px;
+  font-size: 14px;
+  color: #555;
+  line-height: 1.5;
+}
+
+.contact-button {
+  display: inline-block;
+  background-color: #00804D;
+  color: white;
+  text-decoration: none;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.contact-button:hover {
+  background-color: #00804D;
+}
+
+.contact-icon {
+  margin-left: 200px;
+  height: 150px;
+  max-width: 100%;
+}
+
+/* Footer */
+.footer {
+    background-color: #00804D;
+    color: white;
+    padding: 40px 20px 20px;
+    font-size: 14px;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+    gap: 20px;
+}
+
+.footer-column {
+    flex: 1 1 200px;
+}
+
+.footer-logo {
+    height: 60px;
+}
+
+.footer-column h4 {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin: 5px 0;
+}
+
+.footer-column a {
     color: white;
     text-decoration: none;
+}
+
+.footer-column a:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 13px;
+}
+
+.footer-bottom .developer {
+    color: #f3c36c;
+}
+
+
+/* PROJECTS PAGE*/
+
+
+/* Reset + Base */
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Banner */
+.project-banner {
+  background: url('images/background.png') center/cover no-repeat;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.project-banner h1 {
+  color: white;
+  font-size: 2rem;
+  padding: 10px 20px;
+  border-radius: 8px;
+}
+
+/* Grid */
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+  padding: 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Card */
+.project-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.project-card img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+.project-card:hover img {
+  transform: scale(1.05);
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.429);
+  color: #00804D;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  padding: 10px;
+  font-weight: bold;
+  font-size: 16px;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.project-card:hover .overlay {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 1;
 }
