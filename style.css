@@ -491,7 +491,7 @@ body {
 
 /* HERO SECTION */
 .about {
-  background: url('../SelahleProject/images/energy-saving-7462465_1280.jpg') center/cover no-repeat;
+  background: url('images/About\ us\ background.jpg') center/cover no-repeat;
   height: 100%;
   position: relative;
 }
