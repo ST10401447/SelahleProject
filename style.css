@@ -490,13 +490,8 @@ body {
 }
 
 /* HERO SECTION */
-<<<<<<< HEAD
-.hero-about {
-  background: url('images/background.png') center/cover no-repeat;
-=======
 .about {
-  background: url('images/') center/cover no-repeat;
->>>>>>> 1f8d5ff (about us initial)
+  background: url('../SelahleProject/images/energy-saving-7462465_1280.jpg') center/cover no-repeat;
   height: 100%;
   position: relative;
 }
@@ -524,8 +519,8 @@ body {
 }
 
 .info-box {
-  background: #d9d9d9;
-  color: #222;
+  background: #d9d9d979;
+  color: #000000;
   margin: 15px auto;
   padding: 20px;
   border-radius: 8px;
@@ -534,7 +529,7 @@ body {
 }
 
 .info-box h3 {
-  color: #00804D;
+  color: #067222;
   margin-bottom: 10px;
 }
 
@@ -576,9 +571,10 @@ body {
 
 
 .values {
-  padding: 40px 20px;
+  padding: 2px 4px;
   max-width: 900px;
   margin: 0 auto;
+  align-content: l;
 }
 
 .values h2 {
@@ -673,7 +669,7 @@ body {
 /* Testimonials Section */
 .testimonials-section {
   padding: 60px 20px;
-  background-image: url('https://images.unsplash.com/photo-1581091215367-3dfec1f6a1f1');
+  background-image: url('images/Testimonials\ Background.jpg');
   background-size: cover;
   background-position: center;
   text-align: center;
@@ -739,7 +735,7 @@ body {
 }
 
 .testimonial-card.dim {
-  opacity: 0.7;
+  opacity: 0.8;
 }
 
 /* Client Image - Small & Rounded */
