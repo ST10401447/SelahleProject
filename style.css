@@ -490,7 +490,7 @@ body {
 }
 
 /* HERO SECTION */
-.hero {
+.hero-about {
   background: url('images/background.png') center/cover no-repeat;
   height: 100%;
   position: relative;
