@@ -64,6 +64,7 @@ nav a {
     align-items: center;
     justify-content: space-between;
     text-align: center;
+    margin: 15px;
 }
 
 .hero h2{
@@ -91,6 +92,7 @@ nav a {
 }
  
 .about-text {
+
     flex: 1;
     min-width: 250px;
 }
@@ -208,7 +210,7 @@ nav a {
 
 .marquee-content {
     display: inline-flex;
-    animation: marquee 10s linear infinite;
+    animation: marquee 15s linear infinite;
 }
 
 .marquee-content img {
@@ -232,7 +234,7 @@ nav a {
     font-weight: bold;
     size: 50px;
     margin-bottom: 20px;
-    color: 00804D;
+    color: #00804D;
 }
 
 .projects-grid {
@@ -464,14 +466,8 @@ body {
   transition: transform 0.4s ease;
 }
 
-.project-card:hover img {
-  transform: scale(1.05);
-}
-
 .overlay {
-  position: absolute;
   bottom: 0;
-  background: rgba(255, 255, 255, 0.429);
   color: #00804D;
   width: 100%;
   height: 100%;
@@ -479,46 +475,42 @@ body {
   padding: 10px;
   font-weight: bold;
   font-size: 16px;
-  opacity: 0;
-  transition: opacity 0.4s ease;
 }
-
-.project-card:hover .overlay {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  opacity: 1;}
 
 
 /* Project Info */
 
+
 .development {
   flex: 1;
   padding: 20px;
+  margin: 10px;
   align-items: center;
   text-align: center;
 }
+ .development h2 {
+    color: #00804D;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
 
-/* Why Choose Us section */
+.project-title {
+    display: flex;
+    font-weight: bold;
+    color: #00804D;
+    margin: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
 .project-details {
     display: flex;
-    justify-content: center;
     background: white;
     padding: 30px;
-     margin: 40px auto; /* Centers horizontally */
-    border-radius: 10px;
-}
- 
-.details {
-    flex: 1;
-    min-width: 250px;
+    margin-left: 250px;
+    max-width: 1000px;
 }
 
-.details-text h2 {
-    font-weight: bold;
-    margin-bottom: 15px;
-    color: #00804D;
-}
 
 .details-image {
     flex: 1;
@@ -527,9 +519,34 @@ body {
 }
 
 .details-image img {
-    max-width: 500px;
-    height: auto;
+    max-width: 120px;
+    height: 150px;
 }
+
+.project-photo .container {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 15px;
+  align-items: stretch;
+  max-width: 1000px;
+  align-items: center;
+  justify-content: center;
+  margin: 10px auto;
+}
+
+.project-photo img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+.projects-photo .right {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  gap: 15px;
+}
+
+
 
 /* ABOUT US */
 * {
