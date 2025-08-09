@@ -89,7 +89,7 @@ nav a {
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     max-width: 1000px;
 }
-
+ 
 .about-text {
     flex: 1;
     min-width: 250px;
@@ -208,7 +208,7 @@ nav a {
 
 .marquee-content {
     display: inline-flex;
-    animation: marquee 10s linear infinite;
+    animation: marquee 20s linear infinite;
 }
 
 .marquee-content img {
@@ -549,25 +549,39 @@ body {
 
 /* MISSION SECTION */
 .mission-section {
-  text-align: left;
-  padding: 60px 20px;
-  
+    display: flex;
+    justify-content: left;
+    background: white;
+    padding: 30px;
+    margin: 30px;
+}
+.missionn-text {
+  flex: 1;
+  min-width: 250px;
 }
 
 .mission-section h2 {
   color: #2e7d32;
   margin-bottom: 20px;
 }
+.mission-section p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-top: 65px;
+}
 
 .mission-icon {
   margin-top: 30px;
-  width: 100px;
+  margin-left: 350px;
+  max-width: 500px;
+  height: 250px;
   
 }
 
 /* VALUES SECTION */
 .values-section {
   text-align: left;
+  margin: 30px;
   padding: 60px 20px;
 }
 
@@ -577,42 +591,25 @@ body {
 }
 
 .values-grid {
-  display: flex;
+  display: grid;
   flex-wrap: wrap;
+  grid-template-columns: repeat(3, 1fr);
   justify-content: center;
   gap: 20px;
 }
 
 .value-item {
-  background: #e8f5e9;
   padding: 10px 20px;
   border-radius: 25px;
-  color: #2e7d32;
+  color: black;
   font-weight: 600;
-}
-
-
-/* Why Us Icons */
-.card-icon {
-  width: 50px;
-  height: 50px;
-  margin-bottom: 15px;
-}
-
-/* Testimonials Section */
-.testimonial-img {
-  width: 80px;
-  height: 80px;
-  object-fit: cover;
-  border-radius: 50%;
-  margin-bottom: 15px;
 }
 
 
 /* Why Us */
 .why-us .cards {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(2, 1fr);
   gap: 20px;
   margin-top: 30px;
 }
@@ -622,6 +619,16 @@ body {
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.05);
 }
+
+/* Why Us Icons */
+.card-icon {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 15px;
+  margin: 10px;
+}
+
+
 
 /* Testimonials */
 .testimonials {
@@ -646,14 +653,6 @@ body {
   margin-top: 10px;
   font-weight: 600;
   color: #2e7d32;
-}
-
-
-/* Why Us Icons */
-.card-icon {
-  width: 50px;
-  height: 50px;
-  margin-bottom: 15px;
 }
 
 /* Testimonials Section */
