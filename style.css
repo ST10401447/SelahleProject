@@ -505,8 +505,8 @@ body {
 }
 
 /* HERO SECTION */
-.hero-about {
-  background: url('images/background.png') center/cover no-repeat;
+.about {
+  background: url('images/About\ us\ background.jpg') center/cover no-repeat;
   height: 100%;
   position: relative;
 }
@@ -518,6 +518,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  
 }
 
 .hero-content {
@@ -533,8 +534,8 @@ body {
 }
 
 .info-box {
-  background: rgba(255, 255, 255, 0.699);
-  color: #222;
+  background: #d9d9d979;
+  color: #000000;
   margin: 15px auto;
   padding: 20px;
   border-radius: 8px;
@@ -543,10 +544,11 @@ body {
 }
 
 .info-box h3 {
-  color: #2e7d32;
+  color: #067222;
   margin-bottom: 10px;
 }
 
+<<<<<<< HEAD
 /* MISSION SECTION */
 .mission-section {
     display: flex;
@@ -558,11 +560,28 @@ body {
 .missionn-text {
   flex: 1;
   min-width: 250px;
+=======
+/* Mission Section */
+.mission {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  padding: 50px 20px;
+  max-width: 1100px;
+  margin: 0 auto;
 }
 
-.mission-section h2 {
-  color: #2e7d32;
-  margin-bottom: 20px;
+.mission-left {
+  flex: 1;
+  text-align: left;
+>>>>>>> cf5e0602e489589441afe5397b94dabdb99797bc
+}
+
+.mission-right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
 }
 .mission-section p {
   font-size: 16px;
@@ -570,34 +589,156 @@ body {
   margin-top: 65px;
 }
 
+<<<<<<< HEAD
 .mission-icon {
   margin-top: 30px;
   margin-left: 350px;
   max-width: 500px;
   height: 250px;
   
+=======
+.mission-left h2 {
+  color: #2e7d32; /* green heading */
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+.mission-right img {
+  max-width: 220px;
+  height: auto;
+>>>>>>> cf5e0602e489589441afe5397b94dabdb99797bc
 }
 
-/* VALUES SECTION */
-.values-section {
+.underline {
+  border: none;
+  height: 2px;
+  background-color: black;
+  width: 155px;
+  margin: 8px 0 20px;
+}
+
+/* Values Section */
+.values {
+  padding: 40px 20px;
+  max-width: 1100px;
+  margin: 0 auto;
   text-align: left;
+<<<<<<< HEAD
   margin: 30px;
   padding: 60px 20px;
+=======
+>>>>>>> cf5e0602e489589441afe5397b94dabdb99797bc
 }
 
-.values-section h2 {
+.values h2 {
   color: #2e7d32;
-  margin-bottom: 30px;
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 5px;
 }
 
 .values-grid {
   display: grid;
+<<<<<<< HEAD
   flex-wrap: wrap;
   grid-template-columns: repeat(3, 1fr);
+=======
+  grid-template-columns: repeat(3, auto);
+  row-gap: 15px;
+  column-gap: 50px;
+  margin-top: 15px;
+}
+
+.value-item {
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+}
+
+.value-item::before {
+  color: #2e7d32;
+  font-weight: bold;
+  margin-right: 8px;
+}
+
+
+/* Why choose us*/
+.why-choose {
+  text-align: center;
+  padding: 60px 20px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.why-choose h2 {
+  color: #2e7d32;
+  margin-bottom: 40px;
+  font-size: 24px;
+}
+
+.choose-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+}
+
+.choose-card {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  border-radius: 8px;
+  overflow: hidden;
+  text-align: left;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.choose-card img {
+  width: 40%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.choose-text {
+  padding: 15px;
+}
+
+.choose-card h3 {
+  margin-bottom: 8px;
+}
+
+.choose-card p {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.green-text {
+  color: #2e7d32;
+  font-weight: 600;
+}
+
+/* Testimonials Section */
+.testimonials {
+  background: url("images/Testimonials\ Background.jpg") no-repeat center/cover;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.testimonials-title {
+  color: #0b713d;
+  margin-bottom: 30px;
+  font-size: 26px;
+  text-align: center;
+}
+
+.testimonials-container {
+  display: flex;
+  align-items: center;
+>>>>>>> cf5e0602e489589441afe5397b94dabdb99797bc
   justify-content: center;
   gap: 20px;
 }
 
+<<<<<<< HEAD
 .value-item {
   padding: 10px 20px;
   border-radius: 25px;
@@ -634,21 +775,62 @@ body {
 .testimonials {
   background: #e3f2fd;
   padding: 60px 20px;
+=======
+.arrow {
+  background: rgba(0,0,0,0.8);
+  border: none;
+  color: white;
+  font-size: 26px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.testimonial-card {
+  background: rgba(255, 255, 255, 0.993);
+  padding: 20px;
+  border-radius: 6px;
+  max-width: 280px;
+>>>>>>> cf5e0602e489589441afe5397b94dabdb99797bc
   text-align: center;
 }
-.testimonial-cards {
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
-  max-width: 800px;
-  margin: 30px auto 0;
+
+.testimonial-card.small {
+  background-color: rgba(134, 134, 134, 0.795); 
+  backdrop-filter: blur(2px); 
+  height: 400px;
 }
-.testimonial {
-  background: white;
-  padding: 20px;
-  border-radius: 10px;
+
+.testimonial-card.large {
+  max-width: 340px;
+  height: 450px;
+}
+
+.testimonial-card img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.stars {
+  color: gold;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.testimonial-card p {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.testimonial-card span {
+  font-size: 13px;
   font-style: italic;
 }
+<<<<<<< HEAD
 .testimonial h4 {
   margin-top: 10px;
   font-weight: 600;
@@ -756,3 +938,5 @@ body {
   border-radius: 5px;
 }
 
+=======
+>>>>>>> cf5e0602e489589441afe5397b94dabdb99797bc
