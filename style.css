@@ -64,11 +64,13 @@ nav a {
     align-items: center;
     justify-content: space-between;
     text-align: center;
-    margin: 15px;
+    margin: 30px;
+    height: 520px;
 }
 
 .hero h2{
     color: #00804D; 
+    margin: 20px;
 }
 
 .hero img {
@@ -76,8 +78,14 @@ nav a {
     flex: 1;
     margin-right: 20px;
     padding-right: 20px;
-}
 
+}
+.contact-button{
+    background: #00804D;
+    color: white;
+    border-radius: 4px;
+    padding: 20px;
+}
 
 /* Why Choose Us section */
 .about-box {
@@ -92,7 +100,6 @@ nav a {
 }
  
 .about-text {
-
     flex: 1;
     min-width: 250px;
 }
@@ -100,6 +107,7 @@ nav a {
 .about-text h2 {
     font-weight: bold;
     margin-bottom: 15px;
+    color:#00804D
 }
 
 .about-text ul {
@@ -129,6 +137,7 @@ nav a {
     text-align: center;
     padding: 40px 20px;
     max-width: 1100px;
+    padding: 30px;
     margin: auto;
 }
 
@@ -342,6 +351,7 @@ nav a {
   margin: 0 0 15px;
   font-size: 20px;
   font-weight: 700;
+  color: #00804D;
 }
 
 .contact-text p {
