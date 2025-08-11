@@ -222,6 +222,7 @@ nav a {
 .clients {
     padding: 20px;
     overflow: hidden;
+    text-align: center;
 }
 
 .clients h2 {
@@ -238,7 +239,7 @@ nav a {
 
 .marquee-content {
     display: inline-flex;
-    animation: marquee 15s linear infinite;
+    gap: 40px;
 }
 
 .marquee-content img {
@@ -576,7 +577,7 @@ body {
 
 
 
-/* ABOUT US */
+/* ABOUT US PAGE */
 * {
   margin: 0;
   padding: 0;
@@ -590,7 +591,7 @@ body {
   color: #222;
 }
 
-/* HERO SECTION */
+/* ABOUT SECTION */
 .about {
   background: url('images/About\ us\ background.jpg') center/cover no-repeat;
   height: 100%;
@@ -657,7 +658,7 @@ body {
 }
 
 .mission-left h2 {
-  color: #00804D; /* green heading */
+  color: #00804D; 
   font-size: 26px;
   font-weight: 700;
   margin-bottom: 5px;
@@ -773,7 +774,7 @@ body {
 }
 
 .testimonials-title {
-  color: #0b713d;
+  color: #f7f7f7;
   margin-bottom: 30px;
   font-size: 26px;
   text-align: center;
@@ -841,6 +842,14 @@ body {
   font-size: 13px;
   font-style: italic;
 }
+.testimonial-wrapper {
+  display: flex;
+  gap: 20px;
+  overflow: hidden;
+  scroll-behavior: smooth;
+  max-width: 900px; 
+}
+
 
 
 
