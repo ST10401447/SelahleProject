@@ -14,6 +14,8 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
+
+//HOME PAGE MARQUEE//
 const marqueeContent = document.querySelector('.marquee-content');
 const clone = marqueeContent.cloneNode(true);
 document.querySelector('.marquee').appendChild(clone);
@@ -33,3 +35,17 @@ function animateMarquee() {
 }
 
 animateMarquee();
+
+//TEAMS PAGE //
+function scrollToProfile(profileId) {
+        const profile = document.getElementById(profileId);
+        if (profile) {
+            // Smooth scroll to the profile
+            profile.scrollIntoView({
+                behavior: 'smooth',
+                block: 'center'
+            });
+        }
+    }
+
+   
