@@ -633,7 +633,7 @@ body {
 
 .hero-content {
   text-align: center;
-  color: white;
+  color: rgb(0, 0, 0);
   max-width: 1000px;
   padding: 20px;
 }
@@ -644,17 +644,20 @@ body {
 }
 
 .info-box {
-  background: #d9d9d99c;
-  color: #000000;
+  background: url(images/environmental-protection-326923_1280\ \(1\).jpg);
+  color: #fffcfc;
   margin: 15px auto;
   padding: 20px;
   border-radius: 8px;
   max-width: 1000px;
   text-align: center;
+  
 }
 
+
+
 .info-box h3 {
-  color: #00804D;
+  color: #ffffff;
   margin-bottom: 10px;
   font-size: 24px;
 }
