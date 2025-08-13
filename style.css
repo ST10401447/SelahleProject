@@ -59,16 +59,33 @@ nav a {
 /* Hero section */
 .hero {
 
-    padding: 50px 40px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     text-align: center;
-    margin: 15px;
+    height: 605px;
+    background: url("images/banner.jpeg") center/cover no-repeat;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.071); /* 0.5 = 50% black shade */
+    z-index: 1;
+}
+
+.hero > * {
+    position: relative;
+    z-index: 2;
 }
 
 .hero h2{
     color: #00804D; 
+    margin: 20px;
 }
 
 .hero img {
@@ -76,8 +93,14 @@ nav a {
     flex: 1;
     margin-right: 20px;
     padding-right: 20px;
-}
 
+}
+.contact-button{
+    background: #00804D;
+    color: white;
+    border-radius: 4px;
+    padding: 20px;
+}
 
 /* Why Choose Us section */
 .about-box {
@@ -92,7 +115,6 @@ nav a {
 }
  
 .about-text {
-
     flex: 1;
     min-width: 250px;
 }
@@ -100,6 +122,7 @@ nav a {
 .about-text h2 {
     font-weight: bold;
     margin-bottom: 15px;
+    color:#00804D
 }
 
 .about-text ul {
@@ -129,6 +152,7 @@ nav a {
     text-align: center;
     padding: 40px 20px;
     max-width: 1100px;
+    padding: 30px;
     margin: auto;
 }
 
@@ -213,6 +237,7 @@ nav a {
 .clients {
     padding: 20px;
     overflow: hidden;
+    text-align: center;
 }
 
 .clients h2 {
@@ -229,7 +254,7 @@ nav a {
 
 .marquee-content {
     display: inline-flex;
-    animation: marquee 15s linear infinite;
+    gap: 40px;
 }
 
 .marquee-content img {
@@ -308,7 +333,7 @@ nav a {
     padding: 5px 12px;
     border-radius: 4px;
     font-size: 20px;
-    width: 55px;
+    width: 60px;
     text-decoration: none;
 }
 
@@ -342,6 +367,7 @@ nav a {
   margin: 0 0 15px;
   font-size: 20px;
   font-weight: 700;
+  color: #00804D;
 }
 
 .contact-text p {
@@ -394,6 +420,14 @@ nav a {
 
 .footer-column {
     flex: 1 1 200px;
+}
+
+.fa-phone {
+  color: black;
+}
+
+.fa-envelope{
+  color: black;
 }
 
 .footer-logo {
@@ -610,7 +644,7 @@ body {
 }
 
 .info-box {
-  background: #d9d9d979;
+  background: #d9d9d99c;
   color: #000000;
   margin: 15px auto;
   padding: 20px;
@@ -622,6 +656,7 @@ body {
 .info-box h3 {
   color: #00804D;
   margin-bottom: 10px;
+  font-size: 24px;
 }
 
 /* Mission Section */
@@ -847,7 +882,7 @@ body {
 /* Reset */
 
 /* Banner */
-.contact-banner {
+.-banner {
   background: url("images/background.png") center/cover no-repeat;
   color: white;
   text-align: center;
@@ -1033,7 +1068,7 @@ body {
 }
 
 .team-card h3 {
-    color: #00804D;
+    color: #000000;
     font-size: 1.5rem;
     margin-bottom: 10px;
     font-weight: 600;
@@ -1098,7 +1133,7 @@ body {
 }
 
 .profile-content h3 {
-    color: #00804D;
+    color: #000000;
     font-size: 1.8rem;
     margin-bottom: 20px;
     font-weight: 600;
@@ -1163,3 +1198,253 @@ body {
     }
 }
 
+/* Services page */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    color: #333;
+}
+
+.storage {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+    padding: 20px;
+}
+
+.storage h1 {
+    text-align: center;
+    color: #00804D;
+}
+
+.subtitle {
+    text-align: center;
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 40px;
+}
+
+/* Top Section */
+.top-section {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.image-left {
+    flex: 1;
+    position: relative;
+}
+
+.worker-img {
+    width: 100%;
+    border-radius: 5px;
+    height: 350px;
+}
+
+.nebosh-logo {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    width: 70px;
+}
+
+.services {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.environment-section h1{
+  text-align: center;
+  color: #00804D;
+  
+}
+
+.service {
+    display: flex;
+    gap: 15px;
+    align-items: flex-start;
+}
+
+.icon {
+    font-size: 24px;
+    background: #d6f5e3;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+/* Bottom Section */
+.bottom-section {
+    display: flex;
+    gap: 30px;
+}
+
+.left-column {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.right-column {
+    flex: 1;
+}
+
+.incident-img {
+    width: 100%;
+    border-radius: 5px;
+}
+.subtitle {
+    text-align: center;
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 40px;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 40px 0;
+}
+.container h2{
+  text-align: center;
+}
+
+.environment-section {
+    background-color: #f2fbf4;
+}
+
+.grid {
+    display: grid;
+  grid-template-columns: repeat(3, auto);
+  row-gap: 15px;
+  column-gap: 50px;
+  margin-top: 15px;
+}
+.card {
+    background: #ffffff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    text-align: center;
+}
+
+.card .icon {
+    background: #d6f5e3;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    margin: 0 auto 15px;
+}
+
+.card h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 13px;
+    color: #555;
+}
+
+.support-section {
+    background-color: #ffffff;
+}
+
+.support-section h2 {
+    text-align: center;
+    color: #00804D;
+    margin-bottom: 30px;
+}
+
+.card.small {
+    padding: 15px;
+}
+.certifications {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.certifications h2 {
+    color: #00804D;
+    margin-bottom: 30px;
+}
+
+.cert-grid {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.cert-card {
+    text-align: center;
+}
+
+.cert-icon {
+    width: 60px;
+    height: 60px;
+    border: 2px solid #0a8f3f;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 26px;
+    color: #0a8f3f;
+    margin: 0 auto 10px;
+}
+
+.cert-card h3 {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 5px 0;
+}
+
+.cert-card p {
+    font-size: 13px;
+    color: #555;
+}
+
+/* CTA Section */
+.cta-section {
+    background: linear-gradient(90deg, #08743b, #0ca14a);
+    color: #fff;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.cta-section h2 {
+    color: #fff;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.cta-section p {
+    max-width: 600px;
+    margin: auto;
+    font-size: 14px;
+    margin-bottom: 25px;
+}
+
+.cta-button {
+    background-color: #fff;
+    color: #08743b;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 25px;
+}
