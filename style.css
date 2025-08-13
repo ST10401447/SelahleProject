@@ -581,19 +581,16 @@ body {
 
 .project-details {
    display: flex;
-    justify-content: center;
     background: white;
     padding: 30px;
     margin: 40px auto; /* Centers horizontally */
-    max-width: 600px;
+    max-width: 700px;
 } 
 
 .info-text ul{
    list-style: disc;
-    padding-left: 20px;
     margin-bottom: 20px;
     line-height: 2;
-    align-items: center;
 }
 
 .details-image {
@@ -604,7 +601,7 @@ body {
 
 .details-image img {
     max-width: 120px;
-    height: 150px;
+    height: 120px;
 }
 
 .project-photo .container {
