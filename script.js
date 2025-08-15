@@ -48,4 +48,27 @@ function scrollToProfile(profileId) {
         }
     }
 
-   
+   document.addEventListener("DOMContentLoaded", function () {
+  const slides = document.querySelectorAll(".carousel-slide");
+  const prev = document.querySelector(".prev");
+  const next = document.querySelector(".next");
+  let index = 0;
+
+  function showSlide(i) {
+    slides.forEach(slide => slide.classList.remove("active"));
+    slides[i].classList.add("active");
+  }
+
+  function nextSlide() {
+    index = (index + 1) % slides.length;
+    showSlide(index);
+  }
+
+  function prevSlide() {
+    index = (index - 1 + slides.length) % slides.length;
+    showSlide(index);
+  }
+
+  // Auto slide every 5 seconds
+  setInterval(nextSlide, 5000);
+});
