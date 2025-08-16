@@ -46,6 +46,10 @@ nav a {
 
 }
 
+nav a.active-link {
+  color: #000000; 
+}
+
 .btn {
     background: #00804D;
     color: white;
@@ -99,13 +103,13 @@ nav a {
 }
 
 .carousel-text h2 {
-  font-size: 28px;
+  font-size: 35px;
   margin-bottom: 10px;
-  color: #00804D;
+  color: #fff;
 }
 
 .carousel-text p {
-  font-size: 16px;
+  font-size: 20px;
   margin-bottom: 15px;
 }
 
@@ -284,6 +288,7 @@ nav a {
     height: 250px;
     margin: 0 40px;
 }
+
 
 @keyframes marquee {
     from { transform: translateX(100%); }

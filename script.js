@@ -1,4 +1,18 @@
 document.addEventListener("DOMContentLoaded", function () {
+  const navLinks = document.querySelectorAll("header nav a");
+  const currentPath = window.location.pathname.split("/").pop(); // e.g. "index.html"
+
+  navLinks.forEach(link => {
+    const linkPath = link.getAttribute("href");
+    if (linkPath === currentPath) {
+      link.classList.add("active-link");
+    }
+  });
+});
+
+
+
+document.addEventListener("DOMContentLoaded", function () {
     const wrapper = document.querySelector(".testimonial-wrapper");
     const leftBtn = document.querySelector(".arrow.left");
     const rightBtn = document.querySelector(".arrow.right");
