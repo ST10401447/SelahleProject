@@ -6,18 +6,28 @@ body {
     padding: 0;
     line-height: 1.6;
 }
+
+
 .-banner {
-  background: url("images/Logo/");
+  background: url("images/Logo/BannerBanner.jpg") center/cover no-repeat;
   color: white;
   text-align: center;
   padding: 100px 20px;
-  background-size: cover;   /* fills the screen */
-  height: 100vh;            /* full screen height */
+  background-size: cover;   /* fills the screen /         / full screen height */
   display: flex;            /* centers content */
   align-items: center;
   justify-content: center;
+  position: relative;   
+  font-family: Arial, sans-serif;
+  font-weight: 400;   /* for absolute positioning of overlay */
+  background-attachment: fixed; /* keeps the background fixed during scroll */
 }
 
+.-banner h1 {
+  font-size: 2.0rem;
+  color: white; /* light green */
+  margin-bottom: 20px;
+}
 header {
     display: flex;
     justify-content: space-between;
@@ -520,7 +530,27 @@ nav a.active-link {
   flex: 1;
 }
 
+
+
 /* Contact Us Page */
+
+/* Hero Section */
+.hero-text h1 {
+  font-size: 1.9rem;
+  color: white; /* light green */
+  margin-bottom: 20px;
+}
+.hero-text p {
+  font-size: 1.1rem;
+  line-height: 1.4;
+  margin-bottom: 20px;
+  color: white;
+  font-family: Arial, sans-serif;
+  font-weight: 400;
+  text-align: center;
+  max-width: 600px; /* limits width for better readability */
+
+}
 
 .contact-content {
   display: flex;
@@ -677,8 +707,6 @@ nav a.active-link {
     flex-direction: column;
   }
 }
-
-
 
 
 /* Footer */
