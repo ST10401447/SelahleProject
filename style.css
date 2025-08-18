@@ -7,10 +7,15 @@ body {
     line-height: 1.6;
 }
 .-banner {
-  background: url("image") center/cover no-repeat;
+  background: url("images/Logo/");
   color: white;
   text-align: center;
   padding: 100px 20px;
+  background-size: cover;   /* fills the screen */
+  height: 100vh;            /* full screen height */
+  display: flex;            /* centers content */
+  align-items: center;
+  justify-content: center;
 }
 
 header {
