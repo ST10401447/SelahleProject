@@ -1,16 +1,31 @@
 document.addEventListener("DOMContentLoaded", function () {
   const navLinks = document.querySelectorAll("header nav a");
-  const currentPath = window.location.pathname.split("/").pop(); // e.g. "index.html"
+  let currentPath = window.location.pathname;
+
+  currentPath = currentPath.substring(currentPath.lastIndexOf("/") + 1);
+  if (currentPath === "" || currentPath === "/") currentPath = "index.html";
+  currentPath = currentPath.toLowerCase();
 
   navLinks.forEach(link => {
-    const linkPath = link.getAttribute("href");
+    const linkPath = link.getAttribute("href").toLowerCase();
+
+    // Highlight exact match
     if (linkPath === currentPath) {
+      link.classList.add("active-link");
+    }
+
+    // Highlight Services parent if child is active
+    if (
+       (currentPath === "environment.html" || 
+       currentPath === "it.html") &&
+      linkPath === "service.html"
+    ) {
       link.classList.add("active-link");
     }
   });
 });
 
-
+//TESTIMONIALS CAROUSEL//
 
 document.addEventListener("DOMContentLoaded", function () {
     const wrapper = document.querySelector(".testimonial-wrapper");
@@ -62,6 +77,7 @@ function scrollToProfile(profileId) {
         }
     }
 
+//CAROUSEL SLIDER//
    document.addEventListener("DOMContentLoaded", function () {
   const slides = document.querySelectorAll(".carousel-slide");
   const prev = document.querySelector(".prev");
