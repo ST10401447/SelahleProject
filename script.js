@@ -78,7 +78,6 @@ function scrollToProfile(profileId) {
         }
     }
 
-<<<<<<< Updated upstream
 //CAROUSEL SLIDER//
    document.addEventListener("DOMContentLoaded", function () {
   const slides = document.querySelectorAll(".carousel-slide");
@@ -104,7 +103,6 @@ function scrollToProfile(profileId) {
   // Auto slide every 5 seconds
   setInterval(nextSlide, 5000);
 });
-=======
     //modal javascript
   
 // Open modal function
@@ -120,34 +118,44 @@ function openModal(person) {
 function closeModal(person) {
     var modal = document.getElementById(person + 'Modal');
     if (modal) {
-        modal.style.display = ' none';
-        document.body.style.overflow = 'block';
+        modal.style.display = 'none'; // Remove the space before 'none'
+        document.body.style.overflow = 'auto';
     }
 }
 
 // Add event listeners when DOM is loaded
 document.addEventListener('DOMContentLoaded', function() {
-    // Add click event listeners to all close buttons
-    var closeButtons = document.querySelectorAll('.close');
-    closeButtons.forEach(function(button) {
-        button.addEventListener('click', function(event) {
-            event.stopPropagation();
-            closeModal();
+    // Add click event listeners to modals
+    const modals = document.querySelectorAll('.modal');
+    
+    modals.forEach(function(modal) {
+        modal.addEventListener('click', function(event) {
+            // If clicking the modal background (not the content)
+            if (event.target === modal) {
+                const person = modal.id.replace('Modal', '');
+                closeModal(person);
+            }
         });
     });
 
-    // Close modal when clicking outside the modal content
-    window.addEventListener('click', function(event) {
-        if (event.target.classList.contains('modal')) {
-            closeModal();
-        }
+    // Add click event listeners to close buttons
+    const closeButtons = document.querySelectorAll('.close');
+    closeButtons.forEach(function(button) {
+        button.addEventListener('click', function() {
+            const modalId = this.closest('.modal').id;
+            const person = modalId.replace('Modal', '');
+            closeModal(person);
+        });
     });
 
     // Close modal with Escape key
     document.addEventListener('keydown', function(event) {
         if (event.key === 'Escape') {
-            closeModal();
+            const openModal = document.querySelector('.modal[style*="display: block"]');
+            if (openModal) {
+                const person = openModal.id.replace('Modal', '');
+                closeModal(person);
+            }
         }
     });
 });
->>>>>>> Stashed changes
