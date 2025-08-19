@@ -1,3 +1,4 @@
+let people = ["Shonisani", "Kaizer", "Fortune", "Sbongile", "Sinnah"];
 document.addEventListener("DOMContentLoaded", function () {
   const navLinks = document.querySelectorAll("header nav a");
   let currentPath = window.location.pathname;
