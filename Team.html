@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Team</title>
+    <title>Selahle Leadership Team</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+<<<<<<< Updated upstream
 
 <body>
     
@@ -34,60 +34,184 @@
         <a href="Contact.html" class="btn">Contact Us</a>
     </nav>
 </header>
+=======
+<body.team-page>
+    
+    <header>
+        <img src="images/selahle logo.png" alt="Selahle Logo">
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="Service.html">Services</a> 
+            <a href="Projects.html">Projects</a>
+            <a href="About.html">About</a>
+            <a href="Team.html">Team</a>
+            <a href="Contact.html" class="btn">Contact Us</a>
+        </nav>
+    </header>
+>>>>>>> Stashed changes
 
-    <section class="-banner">
-    <h1> Meet Our Team</h1>
-  </section>    
 
-    <section class="team-intro"> 
-        <div class="container">
-            <div class="team-cards">
-                <div class="team-card" onclick="scrollToProfile('Shonisani')">
-                    <img src="images/Shonisani Selahle.jpeg" alt="Shonisani Selahle">
-                    <h3>Shonisani Selahle</h3>
-                </div>
-                <div class="team-card" onclick="scrollToProfile('Fortune')">
-                    <img src="images/Fortunate Selahle.jpg" alt="Fortune Selahle">
-                    <h3>Fortune Selahle</h3>
-                </div>
-                <div class="team-card" onclick="scrollToProfile('Zwivhuya')">
-                    <img src="images/Zwivhuya Ramavu.png" alt="Zwivhuya Ramavu">
-                    <h3>Zwivhuya Ramavu</h3>
-                </div>
+
+    <div class="heading">
+        <h1>Selahle Team</h1>
+    </div>
+
+    <div class="leadership-container">
+        <div class="profile-card" onclick="openModal('Shonisani')">
+            <div class="profile-image">
+                <img src="images/ShonisaniSelahle.jpg" alt="ShonisaniSelahle" class="profile-photo">
             </div>
-             <h3 class="more-about-text">More about the Team</h3>
-        </div>
-    </section>
-
-     <section class="detailed-profiles">
-        <div class="container">
-            
-            <div class="profile" id="Shonisani">
-                <img src="images/Shonisani Selahle.jpeg" alt="Shonisani Selahle">
-                <div class="profile-content">
-                    <h3>Shonisani Selahle</h3>
-                    <p>As a Chartered Management Accountant (CIMA), Shonisani brings over 15 years of experience in Environmental, Occupational Health and Safety Consulting. She holds the LLB, CMA (CIMA), and MBA qualifications. Her expertise spans risk assessment, compliance auditing, and strategic environmental planning. She is currently pursuing an Honors in Environmental Management. Shonisani is registered with South African Council for Project and Construction Management Professions.</p>
-                </div>
-            </div>
-           
-            <div class="profile" id="Fortune">
-                <img src="images/Fortunate Selahle.jpg" alt="Fortune Selahle">
-                <div class="profile-content">
-                    <h3>Fortune Selahle</h3>
-                    <p>Fortune holds certificates in Accounting Skills, Crime Risk Management, OHS P1, with over 8 years of experience in Environmental, Health and Safety Consulting. His background includes extensive work in mining operations, industrial safety protocols, and health system environments. His attention to detail and systematic approach to compliance makes him invaluable to our clients. Fortune is currently pursuing his BSc degree in Environmental Management and is focusing on service quality and efficiency.</p>
-                </div>
-            </div>
-
-            <div class="profile" id="Zwivhuya">
-                <img src="images/Zwivhuya Ramavu.png" alt="Zwivhuya Ramavu">
-                <div class="profile-content">
-                    <h3>Zwivhuya Ramavu</h3>
-                    <p>Zwivhuya holds a BSc Degree in Geology and Microbiology with over 5 years of experience in Environmental Management and Health & Safety consulting. She specializes in project management, stakeholder engagement, and regulatory compliance. Her technical expertise combined with strong communication skills makes her an effective project coordinator and client liaison. She has worked extensively with mining companies, consulting firms, SOEs, NGO's, and environmental regulatory bodies.</p>
+            <div class="profile-info">
+                <div class="profile-name">Shonisani Selahle</div>
+                <div class="profile-company">Selahle's Director</div>
+                <div class="profile-title">Director</div>
+                <div class="expand-arrow">
+                    <div class="arrow-icon"></div>
                 </div>
             </div>
         </div>
-    </section>
-      
+
+        <div class="profile-card" onclick="openModal('Fortune')">
+            <div class="profile-image">
+                <img src="images/FortuneSelahle.jpg" alt="FortuneSelahle" class="profile-photo">
+            </div>
+            <div class="profile-info">
+                <div class="profile-name">Fortune Selahle</div>
+                <div class="profile-company">Selahle's Director</div>
+                <div class="profile-title">Director</div>
+                <div class="expand-arrow">
+                    <div class="arrow-icon"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="profile-card" onclick="openModal('Sinnah')">
+            <div class="profile-image">
+                <img src="images/SinnahMlongo.jpg" alt="SinnahMlongo" class="profile-photo">
+            </div>
+            <div class="profile-info">
+                <div class="profile-name">Sinnah Mlongo</div>
+                <div class="profile-company">Selahle's Environmental Consultant</div>
+                <div class="profile-title">Environmental Consultant</div>
+                <div class="expand-arrow">
+                    <div class="arrow-icon"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="profile-card" onclick="openModal('Sibongile')">
+            <div class="profile-image">
+                <img src="images/SibongileMamisi.jpg" alt="SibongileMamisi" class="profile-photo">
+            </div>
+            <div class="profile-info">
+                <div class="profile-name">Sibongile Mamisi</div>
+                <div class="profile-company">Selahle's Junior Environmental Consultant</div>
+                <div class="profile-title">Junior Environmental Consultant</div>
+                <div class="expand-arrow">
+                    <div class="arrow-icon"></div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="profile-card" onclick="openModal('Kaizer')">
+            <div class="profile-image">
+                <img src="images/KaizerMukwevho.jpg" alt="KaizerMukwevho" class="profile-photo">
+            </div>
+            <div class="profile-info">
+                <div class="profile-name">Kaizer Mukwevho</div>
+                <div class="profile-company">Selahle's OHSE Field Officer</div>
+                <div class="profile-title">OHSE Field Officer</div>
+                <div class="expand-arrow">
+                    <div class="arrow-icon"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal for Shonisani Selahle -->
+    <div id="ShonisaniModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('Shonisani')">&times;</span>
+            <div class="modal-header">
+                <div class="modal-name">Shonisani Selahle</div>
+                <div class="modal-position">Executive Director</div>
+                <div class="modal-role">Director</div>
+            </div>
+            <div class="modal-body">
+                <p>Shonisani Selahle is the founding Director of Selahle Environmental Consulting, bringing extensive experience in environmental management and sustainable development practices.</p>
+                <p>With over 15 years of experience in environmental consulting, Shonisani has led numerous successful environmental impact assessments and compliance projects across various industries.</p>
+                <p>Holding qualifications in Environmental Science and Project Management, Shonisani is passionate about delivering innovative environmental solutions that balance development needs with environmental protection.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal for Fortune Selahle -->
+    <div id="FortuneModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('Fortune')">&times;</span>
+            <div class="modal-header">
+                <div class="modal-name">Fortune Selahle</div>
+                <div class="modal-position">Executive Director</div>
+                <div class="modal-role">Director</div>
+            </div>
+            <div class="modal-body">
+                <p>Fortune Selahle serves as Co-Director of Selahle Environmental Consulting, bringing strategic leadership and business development expertise to the organization.</p>
+                <p>Fortune's 12 years of experience spans environmental project management, stakeholder engagement, and regulatory compliance, making him instrumental in driving the company's growth and client satisfaction.</p>
+                <p>With a strong background in Environmental Management and Business Administration, Fortune specializes in developing sustainable business strategies and maintaining strong client relationships.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal for Sinnah Mlongo -->
+    <div id="SinnahModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('Sinnah')">&times;</span>
+            <div class="modal-header">
+                <div class="modal-name">Sinnah Mlongo</div>
+                <div class="modal-position">Senior Consultant</div>
+                <div class="modal-role">Environmental Consultant</div>
+            </div>
+            <div class="modal-body">
+                <p>Sinnah Mlongo is a dedicated Environmental Consultant at Selahle, specializing in environmental impact assessments, biodiversity studies, and environmental management plans.</p>
+                <p>With 8 years of field experience, Sinnah has contributed to various high-profile environmental projects, demonstrating expertise in ecological surveys, environmental monitoring, and regulatory compliance.</p>
+                <p>Holding a degree in Environmental Science and certified in environmental auditing, Sinnah is committed to promoting sustainable development practices and environmental conservation.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal for Sibongile Mamisi -->
+    <div id="SibongileModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('Sibongile')">&times;</span>
+            <div class="modal-header">
+                <div class="modal-name">Sibongile Mamisi</div>
+                <div class="modal-position">Consultant</div>
+                <div class="modal-role">Junior Environmental Consultant</div>
+            </div>
+            <div class="modal-body">
+                <p>Sibongile Mamisi is a promising Junior Environmental Consultant at Selahle, bringing fresh perspectives and enthusiasm to environmental project delivery.</p>
+                <p>With 3 years of experience in environmental consulting, Sibongile supports senior consultants in conducting environmental assessments, data collection, and report preparation.</p>
+                <p>Holding a Bachelor's degree in Environmental Management and currently pursuing professional development in GIS and environmental modeling, Sibongile is dedicated to advancing environmental protection through innovative solutions.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal for Kaizer Mukwevho -->
+    <div id="KaizerModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('Kaizer')">&times;</span>
+            <div class="modal-header">
+                <div class="modal-name">Kaizer Mukwevho</div>
+                <div class="modal-position">Field Officer</div>
+                <div class="modal-role">OHSE Field Officer</div>
+            </div>
+            <div class="modal-body">
+                <p>Kaizer Mukwevho serves as the OHSE (Occupational Health, Safety, and Environmental) Field Officer at Selahle, ensuring comprehensive safety and environmental compliance across all project sites.</p>
+                <p>With 6 years of experience in occupational health and safety, Kaizer specializes in risk assessments, safety training, incident investigation, and environmental monitoring in field operations.</p>
+                <p>Certified in OHSE management and holding qualifications in Safety Management, Kaizer is committed to maintaining the highest standards of workplace safety and environmental protection in all field activities.</p>
+            </div>
+        </div>
+    </div>
 
     <footer class="footer">
     <div class="footer-content">
@@ -97,6 +221,7 @@
              OHS & IT solutions — on time, with zero <br>
              harm to people or the planet.</p>
         </div>
+        
         <div class="footer-column">
             <h4>Pages</h4>
             <ul>
@@ -121,17 +246,19 @@
             <p><i class="fa-solid fa-phone"></i> <a href="tel:+27110262560"> +27 86 552 0171 </a></p>
         </div>
     </div>
-     <div class="footer-bottom">
+    <div class="footer-bottom">
         <p>Copyright © 2025 Designed and Developed by</p>
         <p><span class="developer"><a href="https://thetechgiants.co.za/">The Tech Giants </a></span></p>
     </div>
 </footer>
+<<<<<<< Updated upstream
  
 <script src="script.js" > </script>
 
+=======
+
+
+    <script src="script.js"></script>
+>>>>>>> Stashed changes
 </body>
 </html>
-
-
-
-
