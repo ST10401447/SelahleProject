@@ -37,7 +37,7 @@ header {
     border-bottom: 2px solid #ddd;
     position: sticky;
     top: 0;
-    z-index: 3;
+    z-index: 2;
 }
 
 /* Create underline effect */
@@ -109,7 +109,7 @@ nav a.active-link {
   visibility: hidden;
   transform: translateY(10px);
   transition: all 0.3s ease;
-  z-index: 1000;
+  z-index: 6;
 }
 
 /* Links inside dropdown */
@@ -935,7 +935,7 @@ body {
 .lightbox {
   display: none;
   position: fixed;
-  z-index: 3;
+  z-index: 6;
   top: 0; left: 0;
   width: 100%;
   height: 100%;
@@ -966,10 +966,7 @@ body {
 
 .close:hover {
   color: #f3c36c;
-  cursor: pointer;
 }
-
-
 /* ABOUT US PAGE */
 
 .about {
@@ -1241,6 +1238,8 @@ body {
 }
 
 /* THE TEAM */
+
+
 /* Reset and Base Styles */
 * {
     margin: 0;
@@ -1255,19 +1254,6 @@ body.team-page {
     padding: 40px 20px;
     overflow-x: auto;
 }
-
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 0;
-    margin-bottom: 20px;
-}
-
-header img {
-    height: 50px;
-}
-
 nav {
     display: flex;
     gap: 20px;
@@ -1629,6 +1615,7 @@ nav .btn:hover {
 ::-webkit-scrollbar-thumb:hover {
     background: rgba(255,255,255,0.5);
 }
+
 
 
 /* Services page */
