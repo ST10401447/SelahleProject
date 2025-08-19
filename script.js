@@ -1,26 +1,10 @@
-let people = ["Shonisani", "Kaizer", "Fortune", "Sbongile", "Sinnah"];
 document.addEventListener("DOMContentLoaded", function () {
   const navLinks = document.querySelectorAll("header nav a");
-  let currentPath = window.location.pathname;
-
-  currentPath = currentPath.substring(currentPath.lastIndexOf("/") + 1);
-  if (currentPath === "" || currentPath === "/") currentPath = "index.html";
-  currentPath = currentPath.toLowerCase();
+  const currentPath = window.location.pathname.split("/").pop(); // e.g. "index.html"
 
   navLinks.forEach(link => {
-    const linkPath = link.getAttribute("href").toLowerCase();
-
-    // Highlight exact match
+    const linkPath = link.getAttribute("href");
     if (linkPath === currentPath) {
-      link.classList.add("active-link");
-    }
-
-    // Highlight Services parent if child is active
-    if (
-       (currentPath === "environment.html" || 
-       currentPath === "it.html") &&
-      linkPath === "service.html"
-    ) {
       link.classList.add("active-link");
     }
   });
@@ -103,10 +87,13 @@ function scrollToProfile(profileId) {
   // Auto slide every 5 seconds
   setInterval(nextSlide, 5000);
 });
-=======
+
+
     //modal javascript
   
 // Open modal function
+let people = ["Shonisani", "Kaizer", "Fortune", "Sbongile", "Sinnah"];
+
 function openModal(person) {
     var modal = document.getElementById(person + 'Modal');
     if (modal) {
@@ -149,4 +136,3 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 });
->>>>>>> Stashed changes

@@ -7,7 +7,6 @@ body {
     line-height: 1.6;
 }
 
-
 .-banner {
   background: url("images/Logo/BannerBanner.jpg") center/cover no-repeat;
   color: white;
@@ -1251,39 +1250,8 @@ body.team-page {
     font-family: 'Arial', sans-serif;
     background: white;
     min-height: 100vh;
-    padding: 40px 20px;
     overflow-x: auto;
 }
-nav {
-    display: flex;
-    gap: 20px;
-    align-items: center;
-}
-
-nav a {
-    text-decoration: none;
-    color: #00804D;
-    font-weight: 500;
-    transition: color 0.3s ease;
-}
-
-nav a:hover {
-    color: #005533;
-}
-
-nav .btn {
-    background: #00804D;
-    color: white;
-    padding: 10px 20px;
-    border-radius: 5px;
-    border: none;
-}
-
-nav .btn:hover {
-    background: #005533;
-    color: white;
-}
-
 .heading {
     text-align: center;
     color: #00804D;
@@ -1702,6 +1670,7 @@ body {
 .bottom-section {
     display: flex;
     gap: 30px;
+    margin: 0 100px 0 100px;
 }
 
 .left-column {
@@ -1868,81 +1837,3 @@ body {
     cursor: pointer;
     margin-bottom: 25px;
 }
-
-/* Service Cards */
-.services {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    padding: 20px;
-}
-
-.service-item {
-    text-align: center;
-    margin: 10px;
-    max-width: 200px;
-}
-
-.service-item img {
-    width: 200px;
-    height: 200px;
-    object-fit: cover;
-}
-
-.service-item h3 {
-    font-size: 14px;
-    margin: 10px 0;
-}
-
-.service-item p {
-    font-size: 12px;
-    color: #333;
-    text-align: center;
-    line-height: 1.5;
-}
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-        .header {
-            background-color: #f4f4f4;
-            padding: 10px 20px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        .logo {
-            height: 50px;
-        }
-        .nav a {
-            margin: 0 15px;
-            text-decoration: none;
-            color: #333;
-            font-weight: bold;
-        }
-        .nav a:hover {
-            color: #006400;
-        }
-        .content {
-            display: flex;
-            justify-content: space-around;
-            padding: 20px;
-            margin: 30px;
-        }
-        .section {
-            width: 30%;
-            text-align: center;
-        }
-        .section img {
-            width: 100%;
-            height: 250px;
-        }
-        .section h2 {
-            color: #006400;
-        }
-        .section ul {
-            list-style-type: disc;
-            padding-left: 20px;
-            text-align: left;
-        }
